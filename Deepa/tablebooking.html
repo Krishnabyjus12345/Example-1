@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Deepa's Kitchen - Contact Page</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+<!--
+
+Tooplate Deepa's Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <a class="navbar-brand" href="index.html">
+                    Deepa's Kitchen
+                </a>
+
+                <div class="d-lg-none">
+                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Table Booking</button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Story</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">Our Updates</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-lg-block">
+                    <a type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal" href="tablebooking.html">Table Booking</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <header class="site-header site-contact-header">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <h1 class="text-white">Waiting for you!!!</h1>
+
+                            <strong class="text-white">We are awaiting to serve you</strong>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="overlay"></div>
+            </header>
+
+
+  <!-- Booking Section -->
+  <section class="contact section-padding" >
+    <div class="container">
+        <div class="row">      
+            <div class="col-12">
+                <h2 class="mb-4">Book Table</h2>
+            </div>
+    
+            <div class="col-lg-6 col-12">
+                <form class="custom-form contact-form row" action="#" method="post" role="form">
+                    <div class="col-lg-6 col-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" id="firstName" name="First Name" required>
+                    </div>
+                    <div class="col-lg-6 col-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" id="lastName" name="Last Name" required>
+                    </div>
+                    <div class="col-lg-6 col-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="tableType" class="form-label">Table Type</label>
+                            <select name="Table Type" id="tableType" required>
+                                <option selected disabled>Choose</option>
+                                <option value="small">Small(2 persons)</option>
+                                <option value="medium">Small(4 persons)</option>
+                                <option value="large">large(6 persons)</option>
+                            </select>
+                    <div>
+                    <div class="col-lg-6 col-6">
+                        <label for="guestNumber" class="form-label">Guest Number</label>
+                            <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+                    </div>
+                    <div class="col-lg-6 col-6">
+                        <label for="placement" class="form-label">Placement</label>
+                            <select name="Placement" id="placement">
+                                <option selected disabled>Choose</option>
+                                <option value="outdoor">Outdoor</option>
+                                <option value="indoor">Indoor</option>
+                                <option value="rooftop">rooftop</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <label for="date" class="form-label">Date</label>
+                                <input type="date" id="date" name="Date" required>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <label for="time" class="form-label">time</label>
+                                <input type="time" id="time" name="Time" required>
+                        </div>
+                        <div class="col-lg-6 col-6">
+                            <label for="note" class="form-label">Note</label>
+                            <textarea name="Note" id="note" rows="4"></textarea>
+                        </div>
+                    <button type="submit" class="custom-btn btn btn-danger">Book Table</button>
+                </form>
+            </div>
+        </div>
+  </section>
+  <!-- End Booking Section -->
+</main>
+
+<footer class="site-footer section-padding">
+    
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-12">
+                <h4 class="text-white mb-4 me-5">Deepa's Kitchen</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+                <p>No 21, 4th cross, Nyanappananhalli main road, Avani Shringeri Nagar, BTM 6th stage, Bengaluru, Karnataka 560076</p>
+
+                <a href="https://goo.gl/maps/MaCNmkRVZX9UCXHH9" class="custom-btn btn btn-dark mt-2">Directions</a>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
+
+                <p class="mb-2">Monday - Friday</p>
+
+                <p>10:00 AM - 08:00 PM</p>
+
+                <p>Tel: <a href="tel: 010-02-0340" class="tel-link">9945291021</a></p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+
+                <ul class="social-icon">
+                    <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                    <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
+                         class="social-icon-link bi-twitter"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                </ul>
+            
+                <p class="copyright-text tooplate-mt60">Copyright © 2022 Deepa's Kitchen Co., Ltd.
+                <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                
+            </div>
+
+        </div><!-- row ending -->
+        
+     </div><!-- container ending -->
+     
+</footer>
